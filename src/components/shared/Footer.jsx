@@ -54,14 +54,14 @@ const Footer = () => {
       </li>
 
 
-      <li>
+      {/* <li>
         <Link
           to="/blogs"
           className="px-3 py-2 cursor-pointer"
         >
           Blogs
         </Link>
-      </li>
+      </li> */}
 
        
     </motion.ul>

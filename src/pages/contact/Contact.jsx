@@ -1,11 +1,20 @@
 import Container from "../../components/container/Container"
-
+import Contact from "../home/components/Contact"
  
 
-const Contact = () => {
+const ContactNow = () => {
   return (
-    <Container> <div>Contact page</div></Container>
+    <Container> 
+      <h1
+          className="font-playfair text-[38px] md:text-[40px] text-center md:text-center leading-[40px] md:leading-[66px] my-10"
+        >
+          Let&apos;s get connected
+        </h1>
+        <div className="">
+<Contact />
+        </div>
+    </Container>
   )
 }
 
-export default Contact
+export default ContactNow

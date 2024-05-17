@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <Container>
       <h1
-          className="font-playfair text-[38px] md:text-[40px] text-center md:text-center leading-[40px] md:leading-[66px]"
+          className="font-playfair text-[38px] md:text-[40px] text-center md:text-center leading-[40px] md:leading-[66px] my-10"
            
         >
           What   Technologies <br /> I use
