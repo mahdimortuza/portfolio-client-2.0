@@ -54,13 +54,13 @@ const Technologies = () => {
             // whileInView={{ opacity: 1, marginBottom: 0 }}
             // transition={{ delay: 0.7, duration: 1 }}
             className="tooltip"
-          > <img   
+          > <motion.img   
               className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
               src={react}
-              // whileHover={{
-              //   scale: 1.09,
-              //   transition: { duration: 0.1 },
-              // }}
+              whileHover={{
+                scale: 1.09,
+                transition: { duration: 0.1 },
+              }}
             />
             <span className="tooltiptext">ReactJS</span>
           </div>
@@ -70,13 +70,13 @@ const Technologies = () => {
             // whileInView={{ opacity: 1, marginBottom: 0 }}
             // transition={{ delay: 0.7, duration: 1 }}
             className="tooltip"
-          > <img   
+          > <motion.img   
               className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
               src={next}
-              // whileHover={{
-              //   scale: 1.09,
-              //   transition: { duration: 0.1 },
-              // }}
+              whileHover={{
+                scale: 1.09,
+                transition: { duration: 0.1 },
+              }}
             />
             <span className="tooltiptext">NextJS</span>
           </div>
@@ -86,13 +86,13 @@ const Technologies = () => {
             // whileInView={{ opacity: 1, marginBottom: 0 }}
             // transition={{ delay: 0.7, duration: 1 }}
             className="tooltip"
-          > <img   
+          > <motion.img   
               className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
               src={tailwind}
-              // whileHover={{
-              //   scale: 1.09,
-              //   transition: { duration: 0.1 },
-              // }}
+              whileHover={{
+                scale: 1.09,
+                transition: { duration: 0.1 },
+              }}
             />
             <span className="tooltiptext">Tailwind CSS</span>
           </div>
@@ -103,13 +103,13 @@ const Technologies = () => {
             // whileInView={{ opacity: 1, marginBottom: 0 }}
             // transition={{ delay: 0.7, duration: 1 }}
             className="tooltip"
-          > <img   
+          > <motion.img   
               className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
               src={node}
-              // whileHover={{
-              //   scale: 1.09,
-              //   transition: { duration: 0.1 },
-              // }}
+              whileHover={{
+                scale: 1.09,
+                transition: { duration: 0.1 },
+              }}
             />
             <span className="tooltiptext">NodeJS</span>
           </div>
@@ -119,13 +119,13 @@ const Technologies = () => {
             // whileInView={{ opacity: 1, marginBottom: 0 }}
             // transition={{ delay: 0.7, duration: 1 }}
             className="tooltip"
-          > <img   
+          > <motion.img   
               className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
               src={ts}
-              // whileHover={{
-              //   scale: 1.09,
-              //   transition: { duration: 0.1 },
-              // }}
+              whileHover={{
+                scale: 1.09,
+                transition: { duration: 0.1 },
+              }}
             />
             <span className="tooltiptext">TypeScript</span>
           </div>

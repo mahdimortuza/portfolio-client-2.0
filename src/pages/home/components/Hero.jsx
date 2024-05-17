@@ -105,7 +105,7 @@ const Hero = () => {
       </div>
 
  <Link
-        to="skills"
+        to="/technologies"
         spy={true}
         smooth={true}
         offset={0}

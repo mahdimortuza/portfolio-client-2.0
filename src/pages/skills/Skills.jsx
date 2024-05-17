@@ -1,7 +1,7 @@
 import { Spin } from 'antd';
+import { motion } from "framer-motion";
 import Container from "../../components/container/Container";
 import { useGetTechnologiesQuery } from "../../redux/api/baseApi";
- 
 
 const Skills = () => {
   const {data, isLoading, isError} = useGetTechnologiesQuery()
@@ -27,14 +27,17 @@ const Skills = () => {
         >
           What   Technologies <br /> I use
         </h1>
-      <div className="my-10 grid grid-cols-4 md:grid-cols-7 gap-5 items-center md:px-32">
+      <div className="my-10 grid grid-cols-4 md:grid-cols-7 gap-10 items-center md:px-32">
       {
         technologies.map(technology => <div key={technology._id}
           className="tooltip "
-        > <img   
+        > <motion.img   
             className="w-[62px] h-[62px] md:w-[80px] md:h-[80px] cursor-pointer"
             src={technology.image}
-            
+            whileHover={{
+              scale: 1.09,
+              transition: { duration: 0.1 },
+            }}
           />
           <span className="tooltiptext">{technology.title}</span>
         </div>)
