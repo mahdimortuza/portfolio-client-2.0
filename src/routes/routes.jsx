@@ -2,6 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import AdminLayout from "../components/layouts/AdminLayout";
 import MainLayout from "../components/layouts/MainLayout";
 import About from '../pages/about/About';
+import BlogManagement from "../pages/admin/BlogManagement";
+import Dashboard from "../pages/admin/Dashboard";
+import ProjectManagement from "../pages/admin/ProjectManagement";
+import TechnologyManagement from "../pages/admin/TechnologyManagement";
 import BlogDetail from "../pages/blogDetail/BlogDetail";
 import Blogs from "../pages/blogs/Blogs";
 import ContactNow from "../pages/contact/Contact";
@@ -24,75 +28,57 @@ const router = createBrowserRouter([
       element: <Home />
     },
     {
-      path: '/about',
+      path: 'about',
       element: <About />
     },
     {
-      path: '/technologies',
+      path: 'technologies',
       element: <Skills />
     },
     {
-      path: '/projects',
+      path: 'projects',
       element: <Work />
     },
     {
-      path: '/projects/:id',
+      path: 'projects/:id',
       element: <ProjectDetail />
     },
     {
-      path: '/contact',
+      path: 'contact',
       element: <ContactNow />
     },
     {
-      path: '/blogs',
+      path: 'blogs',
       element: <Blogs />
     }, 
     {
-      path: '/blogs/:id',
+      path: 'blogs/:id',
       element: <BlogDetail />
-    }
-     
+    } 
    ]
   }, 
   
   {
-    path: '/secret/admin', 
+    path: '/admin', 
     element: <AdminLayout /> ,
     errorElement: <ErrorPage />,
    children: [
     {
-      path: '/',
-      element: <Home />
+      path: 'dashboard',
+      element: <Dashboard />
     },
     {
-      path: '/about',
-      element: <About />
+      path: 'technology-management',
+      element: <TechnologyManagement />
     },
     {
-      path: '/technologies',
-      element: <Skills />
+      path: 'project-management',
+      element: <ProjectManagement />
     },
     {
-      path: '/projects',
-      element: <Work />
-    },
-    {
-      path: '/projects/:id',
-      element: <ProjectDetail />
-    },
-    {
-      path: '/contact',
-      element: <ContactNow />
-    },
-    {
-      path: '/blogs',
-      element: <Blogs />
+      path: 'blog-management',
+      element: <BlogManagement />
     }, 
-    {
-      path: '/blogs/:id',
-      element: <BlogDetail />
-    }
-     
    ]
   }, 
   
