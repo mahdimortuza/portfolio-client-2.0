@@ -1,22 +1,18 @@
-import { Spin } from 'antd';
+ 
 import { motion } from "framer-motion";
 import Container from "../../components/container/Container";
 import { useGetTechnologiesQuery } from '../../redux/api/technologyApi';
+import ErrorUI from "../../ui/ErrorUI";
+import LoadingUI from "../../ui/LoadingUI";
 
 const Skills = () => {
   const {data, isLoading, isError} = useGetTechnologiesQuery()
  
   if(isLoading){
-    return <div className="h-screen flex items-center justify-center">
-      <div className="example">
-    <Spin size="large" />
-  </div>
-    </div>
+    return <LoadingUI />
   }
   if(isError){
-    return <div className="h-screen flex items-center justify-center">
-      <p>Something went wrong.</p>
-    </div>
+    return <ErrorUI />
   }
   const technologies = data.data
   return (
