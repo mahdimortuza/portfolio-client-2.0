@@ -1,7 +1,7 @@
 import { Spin } from 'antd';
 import { motion } from "framer-motion";
 import Container from "../../components/container/Container";
-import { useGetTechnologiesQuery } from "../../redux/api/baseApi";
+import { useGetTechnologiesQuery } from '../../redux/api/technologyApi';
 
 const Skills = () => {
   const {data, isLoading, isError} = useGetTechnologiesQuery()
