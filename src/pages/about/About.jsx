@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Container>
       <div className="my-10">
-        <h1 className="text-3xl font-semibold"> Hi there...👋! I&apos;m Mahdi Mortuza...,</h1>
+        <h1 className="text-3xl font-semibold"> Hi there...👋! <br /> I&apos;m Mahdi Mortuza...😎,</h1>
         <p className="text-lg mt-2"> 👉 a versatile Fullstack Web Developer specializing in the MERN stack and Next.js. 
         I graduated from Bangladesh University of Professionals with a degree in Mass Communication and Journalism, 
         which means I know how to tell a story and create engaging user experiences—both in print and on the web! 📰➡️💻
