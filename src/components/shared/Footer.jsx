@@ -10,7 +10,7 @@ const Footer = () => {
 
   const navList = (
     <motion.ul
-      className="font-raleway font-semibold text-lg flex gap-5 md:gap-14 text-[#222A35] "
+      className="font-raleway font-semibold text-lg flex gap-2 md:gap-14 text-[#222A35] "
       // initial={{ opacity: 0, marginBottom: 30 }}
       // whileInView={{ opacity: 1, marginBottom: 0 }}
       // transition={{ delay: 0.5, duration: .5 }}
@@ -19,7 +19,7 @@ const Footer = () => {
         <Link
           to="about"
           
-          className="px-3 py-2 cursor-pointer"
+          className="px-2 py-2 cursor-pointer"
         >
           About
         </Link>
@@ -28,7 +28,7 @@ const Footer = () => {
         <Link
           to="technologies"
           
-          className="px-3 py-2 cursor-pointer"
+          className="px-2 py-2 cursor-pointer"
         >
           Technologies
         </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
         <Link
           to="projects"
            
-          className="px-3 py-2 cursor-pointer"
+          className="px-2 py-2 cursor-pointer"
         >
           Work
         </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
         <Link
           to="contact"
          
-          className="px-3 py-2 cursor-pointer"
+          className="px-2 py-2 cursor-pointer"
         >
           Contact
         </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
       {/* <li>
         <Link
           to="/blogs"
-          className="px-3 py-2 cursor-pointer"
+          className="px-2 py-2 cursor-pointer"
         >
           Blogs
         </Link>

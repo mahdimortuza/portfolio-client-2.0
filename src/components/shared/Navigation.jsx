@@ -4,13 +4,14 @@ import { useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiBars2 } from "react-icons/hi2";
 import { RiTwitterXLine } from "react-icons/ri";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 
 const StickyNavbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const navList = (
     <ul className="font-raleway font-semibold text-lg mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center text-[#222A35]">
+      
       
       
       <motion.li
@@ -20,20 +21,15 @@ const StickyNavbar = () => {
         }}
         whileTap={{ scale: 0.9 }}
       >
-        <NavLink
-            className={({ isActive }) =>
-              (
-                "font-roboto text-[18px] font-medium leading-[150%] px-3 py-1 rounded",
-                {
-                  " bg-red-500 text-white": isActive,
-                }
-              )
-            }
-            to="/about"
-          >
-            About
-          </NavLink>
+        <Link
+          to="/about"
+          
+          className="px-3 py-2 cursor-pointer"
+        >
+          About
+        </Link>
       </motion.li>
+
       <motion.li
         whileHover={{
           scale: 1.09,
@@ -49,6 +45,8 @@ const StickyNavbar = () => {
           Technologies
         </Link>
       </motion.li>
+
+
       <motion.li
         whileHover={{
           scale: 1.09,
