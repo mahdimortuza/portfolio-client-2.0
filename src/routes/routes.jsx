@@ -7,6 +7,7 @@ import Dashboard from "../pages/admin/Dashboard";
 import ProjectManagement from "../pages/admin/ProjectManagement";
 import TechnologyManagement from "../pages/admin/TechnologyManagement";
 import BlogDetail from "../pages/blogDetail/BlogDetail";
+
 import Blogs from "../pages/blogs/Blogs";
 import ContactNow from "../pages/contact/Contact";
 import ErrorPage from "../pages/error/ErrorPage";

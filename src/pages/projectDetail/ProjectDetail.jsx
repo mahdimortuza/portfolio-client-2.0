@@ -26,7 +26,7 @@ const ProjectDetail = () => {
       <div className="my-10"> 
         <div className="flex flex-col items-center">
           <img
-            className="w-[350px] md:w-[1000px]"
+            className="w-[350px] md:w-[800px]"
             src={projectImage}
             alt="Project Image"
             onError={(e) => e.currentTarget.src = defaultImg}

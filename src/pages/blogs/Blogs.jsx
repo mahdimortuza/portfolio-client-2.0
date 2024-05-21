@@ -1,10 +1,12 @@
+import { Image } from "antd";
 import { motion } from "framer-motion";
-import React from "react";
 import { Link } from "react-router-dom";
+import defaultImg from "../../assets/projects/default.webp";
 import Container from "../../components/container/Container";
 import { useGetAllBlogsQuery } from "../../redux/api/blogApi";
 import ErrorUI from "../../ui/ErrorUI";
 import LoadingUI from "../../ui/LoadingUI";
+
 
 const Blogs = () => {
   const { data, isLoading, isError } = useGetAllBlogsQuery({});
@@ -28,7 +30,16 @@ const Blogs = () => {
             key={item._id}
             className="flex flex-col justify-center border border-black rounded-lg p-2"
           >
-            <img className="w-[200px] h-[200px] mx-auto" src={item.image} />
+            {/* <Image
+              className="w-[300px] h-[250px] rounded-md"
+              src={item.image || defaultImg}
+              fallback={defaultImg}
+            /> */}
+
+            <Image className="w-[200px] h-[200px] mx-auto" 
+               src={item.image || defaultImg} 
+              fallback={defaultImg}
+                />
             <p className="text-sm mt-2">
               Category: {""}
               <span className="text-xs">Full-stack</span>
