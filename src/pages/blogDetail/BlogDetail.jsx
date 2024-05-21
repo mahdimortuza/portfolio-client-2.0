@@ -24,7 +24,7 @@ const BlogDetail = () => {
     <Container>
         <div className="my-10">
         <img 
-        className="w-[350px] md:w-[600px]"
+        className="w-[350px] md:w-[400px]"
         src={blogImage}
             onError={(e) => e.currentTarget.src = defaultImg}
             />

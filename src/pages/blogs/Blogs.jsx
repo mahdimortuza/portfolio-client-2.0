@@ -36,15 +36,15 @@ const Blogs = () => {
               fallback={defaultImg}
             /> */}
 
-            <Image className="w-[200px] h-[200px] mx-auto" 
+            <Image className="mx-auto" 
                src={item.image || defaultImg} 
               fallback={defaultImg}
                 />
             <p className="text-sm mt-2">
               Category: {""}
-              <span className="text-xs">Full-stack</span>
+              <span className="text-xs">{item.category}</span>
             </p>
-            <h4 className="font-semibold text-2xl  mt-3">{item.title}</h4>
+            <h4 className="font-semibold text-xl  mt-3">{item.title}</h4>
             <p className=" mt-1">{item.blog}</p>
             <div className="flex justify-end mt-2">
               <Link to={`/blogs/${item._id}`}>

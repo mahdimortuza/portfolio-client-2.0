@@ -22,6 +22,7 @@ const Projects = () => {
       clientRepo: "https://github.com/mahdimortuza/ocean-catch-client",
       serverRepo: "https://github.com/mahdimortuza/ocean-catch-server",
       liveLink: "https://ocean-catch-client.vercel.app/",
+      project: "/projects/664c16bff478b870ee07db9d"
     },
      {
       header: "Foodie Bee",
@@ -30,6 +31,7 @@ const Projects = () => {
       clientRepo: "https://github.com/mahdimortuza/foodie-bee-client",
       serverRepo: "https://github.com/mahdimortuza/foodie-bee-server",
       liveLink: "https://foodie-bee-client-main.vercel.app/",
+      project: "/projects/664c1b55f478b870ee07dba8"
     },
     {
       header: "Event-360",
@@ -38,6 +40,7 @@ const Projects = () => {
       clientRepo: "https://github.com/mahdimortuza/event-360-client",
       serverRepo: "https://github.com/mahdimortuza/event-360-server",
       liveLink: "https://event-360-client.vercel.app/",
+      project: "/projects/664c2fa6f478b870ee07dbae"
     },
     
     // {
@@ -131,7 +134,7 @@ const Projects = () => {
 
                     <Link
                       className=" border-[2px] border-[#4285F4] px-[6px] py-[3px] md:px-[10px] md:py-[5px] hover:bg-gradient-to-r from-[#75B4F1] to-[#A573F0] hover:text-white rounded-[4px]"
-                      to='/projects'
+                      to={sliderElement.project}
                       // whileHover={{
                       //   scale: 1.05,
                       //   transition: { duration: 0.1 },
