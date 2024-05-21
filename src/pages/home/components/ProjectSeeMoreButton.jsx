@@ -12,7 +12,7 @@ const ProjectSeeMoreButton = () => {
               }}
               whileTap={{ scale: 0.9 }}
             >
-               See more
+               View All
             </motion.button>
    </Link>
     </div>
